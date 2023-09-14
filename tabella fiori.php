@@ -1,3 +1,13 @@
+<?php
+ini_set('display_errors', 1);
+error_reporting(E_ERROR | E_PARSE);
+session_start();
+$db_name = "Tabella_Fiori";
+$table_users = "Tabella_Utenti";
+$table_product = "Tabella_Prodotti";
+$mysqliConnection = new mysqli("localhost", "Alessandro", "belandi", $db_name);
+
+?>
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE html
 PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -9,15 +19,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 		<link rel="stylesheet" type="text/css" media="screen" href="tabella.css?v=<?php echo time();?>"> 
     </head>
 <body>
-<?php
-ini_set('display_errors', 1);
-error_reporting(E_ERROR | E_PARSE);
-session_start();
-$db_name = "Tabella_Fiori";
-$table_users = "Tabella_Utenti";
-$table_product = "Tabella_Prodotti";
-$mysqliConnection = new mysqli("localhost", "Alessandro", "belandi", $db_name);
-?>
+
    
 <h1>Negozio Latina Fiori:Tutti i nostri fiori</h1>
 <div class="row">
