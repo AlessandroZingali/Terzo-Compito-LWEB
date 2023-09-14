@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Elenco_fiori SYSTEM "tipologia.dtd">
+<Elenco_fiori><record><Fiore>Rosa rossa</Fiore><Prezzo>23</Prezzo><Quantita>12</Quantita></record></Elenco_fiori>

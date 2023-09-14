@@ -48,8 +48,7 @@ if (isset($_POST['invio']))	{
       $_SESSION['userName']=$_POST['userName'];
       $_SESSION['dataLogin']=time();
       $_SESSION['accessoPermesso']=$row['tipologia'];
-      if($_SESSION['accessoPermesso']=="admin")header('Location: tabella fiori.php');
-	  if($_SESSION['accessoPermesso']=="utente")header('Location: home.php');    
+      header('Location: scelta.php');
       exit();
     }
 

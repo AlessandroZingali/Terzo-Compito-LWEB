@@ -45,9 +45,10 @@ if (mysqli_connect_errno()) {
 
 
 <?php 
+
 $t2=microtime();
 $xmlString = "";
-foreach ( file("fiori.xml") as $node ) {
+foreach ( file("provacartella/fiori.xml") as $node ) {
 	$xmlString .= trim($node);
 }
 

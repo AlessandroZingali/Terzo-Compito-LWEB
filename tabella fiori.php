@@ -38,7 +38,7 @@ $mysqliConnection = new mysqli("localhost", "Alessandro", "belandi", $db_name);
 
 $t2=microtime();
 $xmlString = "";
-foreach ( file("fiori.xml") as $node ) {
+foreach ( file("provacartella/fiori.xml") as $node ) {
 	$xmlString .= trim($node);
 }
 
@@ -59,7 +59,7 @@ $newRecord->appendChild($newFiore);
 $newRecord->appendChild($newPrezzo);
 $newRecord->appendChild($newQuantità);
 $root->appendChild($newRecord);
-$doc->save("fiori.xml");
+$doc->save("provacartella/fiori.xml");
 }
 
 
@@ -70,7 +70,7 @@ if(isset($_POST['svuota'])){
             $root->removeChild($child);
             $child = $root->lastElementChild;
 		}
-	$doc->save("fiori.xml");
+	$doc->save("provacartella/fiori.xml");
 }
 
 if(isset($_POST['Rimuovi'])){
@@ -79,7 +79,7 @@ if(isset($_POST['Rimuovi'])){
 $numero=$_POST['numero'];
 $nodoscelto = $elementi->item($numero);
 $root->removeChild($nodoscelto);
-$doc->save("fiori.xml");
+$doc->save("provacartella/fiori.xml");
 }
 
 
@@ -131,7 +131,7 @@ if (isset($_POST['carica'])){
             $child = $root->lastElementChild;
 		}
 
-	$doc->save("fiori.xml");
+	$doc->save("provacarrello/fiori.xml");
 	$sql = "SELECT * FROM $table_product";
 
 	if (!$resultQ = mysqli_query($mysqliConnection, $sql)) {
@@ -148,7 +148,7 @@ if (isset($_POST['carica'])){
 		$newRecord->appendChild($newQuantità);
 		$root->appendChild($newRecord);
 	}
-	$doc->save("fiori.xml");
+	$doc->save("provacarrello/fiori.xml");
 	header("Refresh:0");
 }
 
