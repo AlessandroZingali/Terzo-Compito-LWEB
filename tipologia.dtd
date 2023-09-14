@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Elenco_fiori (fiore+)>
+<!ELEMENT fiore (nome, costo,quantità)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT costo (#PCDATA)>
+<!ELEMENT quantità (#PCDATA)>

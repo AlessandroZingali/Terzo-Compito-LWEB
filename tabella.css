@@ -1,0 +1,39 @@
+body{
+	background-color:#c2bc93;
+}
+table{
+	border:solid;
+	border-color:#99ffcc;
+	position:relative;
+	margin:10% 20%;
+	text-align:center;
+
+}
+td{
+	border:solid;
+		border-color:#99ee32;
+}
+th{
+	background-color:white;
+}
+h1{
+	font-style:oblique;
+	text-align:center;
+}
+
+.action{
+	position:absolute;
+	margin:1% 60%;
+	border:solid red;
+}
+.column {
+  float: left;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}

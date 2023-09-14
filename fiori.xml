@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Elenco_fiori SYSTEM "tipologia.dtd">
+<Elenco_fiori><record><Fiore>Susanna</Fiore><Prezzo>23</Prezzo><Quantita>12</Quantita></record><record><Fiore>Tulipano rosa</Fiore><Prezzo>213</Prezzo><Quantita>2</Quantita></record><record><Fiore>Tulipano rosa</Fiore><Prezzo>69</Prezzo><Quantita>12</Quantita></record></Elenco_fiori>
