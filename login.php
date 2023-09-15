@@ -31,7 +31,7 @@ if (mysqli_connect_errno()) {
   <p>Nome Utente:<input type="text" name="userName" size="30" /></p>
   <p>Password:<input type="password" name="password" size="30" /></p>
 <?php 
-if (isset($_POST['invio']))	{
+if (isset($_POST['invio'])){
   if (empty($_POST['userName']) || empty($_POST['password']))
 	echo "<p>Accesso negato</p>";
     $sql = "SELECT *
@@ -51,7 +51,7 @@ if (isset($_POST['invio']))	{
 	  if($_SESSION['accessoPermesso']=="admin"){
 		header('Location: tabella fiori.php');  
 	  }
-       else header('Location: home.php');
+       else header('Location: Homepage sito.php');
       exit();
     }
 

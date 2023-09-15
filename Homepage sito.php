@@ -1,6 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-error_reporting(E_ERROR | E_PARSE);
 session_start();
 
 $db_name = "Tabella_Fiori";
@@ -74,7 +72,7 @@ for ($i=0; $i<$elementi->length; $i++) {
 	print "<tr><td>$i</td><td>$nome</td><td>$Prezzo1 € </td><td>$rimasti</td></tr>\n";
 }
 
-if (isset($_POST['logout']))header('Location: logout.php');
+if (isset($_POST['logout']))header('Location:logout.php');
 ?>
 
 </tbody>

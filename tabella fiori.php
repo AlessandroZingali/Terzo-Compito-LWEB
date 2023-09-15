@@ -2,9 +2,11 @@
 ini_set('display_errors', 1);
 error_reporting(E_ERROR | E_PARSE);
 session_start();
+
 $db_name = "Tabella_Fiori";
 $table_users = "Tabella_Utenti";
 $table_product = "Tabella_Prodotti";
+
 $mysqliConnection = new mysqli("localhost", "Alessandro", "belandi", $db_name);
 
 ?>
@@ -133,7 +135,7 @@ if (isset($_POST['carica'])){
             $child = $root->lastElementChild;
 		}
 
-	$doc->save("provacarrello/fiori.xml");
+	$doc->save("provacartella/fiori.xml");
 	$sql = "SELECT * FROM $table_product";
 
 	if (!$resultQ = mysqli_query($mysqliConnection, $sql)) {
@@ -150,7 +152,7 @@ if (isset($_POST['carica'])){
 		$newRecord->appendChild($newQuantità);
 		$root->appendChild($newRecord);
 	}
-	$doc->save("provacarrello/fiori.xml");
+	$doc->save("provacartella/fiori.xml");
 	header("Refresh:0");
 }
 
