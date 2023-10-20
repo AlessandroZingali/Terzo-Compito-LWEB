@@ -1,17 +1,8 @@
 <?php
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
+require_once("connessione.php");
 
-$db_name = "Tabella_Fiori";
-$table_users = "Tabella_Utenti";
-$table_product = "Tabella_Prodotti";
-
-$mysqliConnection = new mysqli("localhost", "Alessandro", "belandi", $db_name);
-
-if (mysqli_connect_errno()) {
-    printf("Non riesco a connettermi %s\n", mysqli_connect_error());
-    exit();
-}
 
 ?>
 <?xml version="1.0" encoding="UTF-8"?>

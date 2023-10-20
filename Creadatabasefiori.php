@@ -2,17 +2,7 @@
 <?php			
 
 error_reporting(E_ALL &~E_NOTICE);
-
-$db_name = "Tabella_Fiori";
-$table_users = "Tabella_Utenti";
-$table_product = "Tabella_Prodotti";
-
-$mysqliConnection = new mysqli("localhost", "Alessandro", "belandi");
-
-
-if (mysqli_connect_errno()) {
-    printf("problemi di connessione : %s\n", mysqli_connect_error());
-}
+require_once("connessione.php");
 
 $queryCreazioneDatabase = "CREATE DATABASE $db_name";
 

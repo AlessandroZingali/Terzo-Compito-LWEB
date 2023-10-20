@@ -2,13 +2,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ERROR | E_PARSE);
 session_start();
-
-$db_name = "Tabella_Fiori";
-$table_users = "Tabella_Utenti";
-$table_product = "Tabella_Prodotti";
-
-$mysqliConnection = new mysqli("localhost", "Alessandro", "belandi", $db_name);
-
+require_once("connessione.php");
 ?>
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE html
