@@ -1,6 +1,6 @@
 <?php
 
-$db_name = "Tabella_Fiori";
+$db_name = "Latina_Fiori";
 $table_users = "Tabella_Utenti";
 $table_product = "Tabella_Prodotti";
 

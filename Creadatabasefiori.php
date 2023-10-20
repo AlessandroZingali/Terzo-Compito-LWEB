@@ -1,8 +1,17 @@
-
 <?php			
 
 error_reporting(E_ALL &~E_NOTICE);
-require_once("connessione.php");
+
+$db_name = "Latina_Fiori";
+$table_users = "Tabella_Utenti";
+$table_product = "Tabella_Prodotti";
+
+$mysqliConnection = new mysqli("localhost", "Alessandro", "belandi");
+//da modificare per accedere a mysql
+if (mysqli_connect_errno()) {
+    printf("problemi di connessione : %s\n", mysqli_connect_error());
+}
+
 
 $queryCreazioneDatabase = "CREATE DATABASE $db_name";
 
@@ -14,8 +23,7 @@ else {
 }
 
 $mysqliConnection->close();
-
-$mysqliConnection = new mysqli("localhost", "Alessandro", "belandi", $db_name);
+require_once("connessione.php");
 
 if (mysqli_errno($mysqliConnection)) {
     printf("Errore creazione connessione\n", mysqli_error($mysqliConnection));
